@@ -1,0 +1,82 @@
+/* fonts */
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/sspbold/SourceSansPro-Bold.woff2") format("woff2"),
+    url("../fonts/sspbold/SourceSansPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/latoregular/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/latoregular/Lato-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Prolight";
+  src: url("../fonts/ssplight/SourceSansPro-Light.woff2") format("woff2"),
+    url("../fonts/ssplight/SourceSansPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Problack";
+  src: url("../fonts/sspblack/SourceSansPro-Black.woff2") format("woff2"),
+    url("../fonts/sspblack/SourceSansPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Proregular";
+  src: url("../fonts/sspregular/SourceSansPro-Regular.woff2") format("woff2"),
+    url("../fonts/sspregular/SourceSansPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center {
+  width: 1170px;
+  margin: 0 auto;
+}
+.fix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.arrow-main {
+  position: relative;
+}
+.arrow {
+  text-align: center;
+  padding: 0px 0px 40px 0px;
+}
+.arrow::after {
+  content: "";
+  width: 525px;
+  height: 1px;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 9px;
+  left: 55%;
+}
+.arrow::before {
+  content: "";
+  width: 525px;
+  height: 1px;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 9px;
+  left: 0%;
+}
